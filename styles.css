@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Slide In Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Styling for the header */
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Applying the animation to the welcome text */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    animation: slideInFromLeft 1.5s ease-out; /* Add animation */
+}
+
+/* Styling for the navigation menu */
+nav {
+    text-align: right; /* Align the navigation menu to the right */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: inline-flex; /* Display items horizontally */
+    gap: 15px; /* Add spacing between buttons */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Make the list items inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    background-color: #9accd3; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add padding to the buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+.component {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.component h3 {
+    color: #333;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
